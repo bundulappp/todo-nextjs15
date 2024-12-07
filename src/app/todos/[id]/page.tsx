@@ -6,7 +6,7 @@ type Props = {
 }
 const todoDetails = async ({params}:Props) => {
     const { id } = await params;
-    return (<div>this is todo {id}</div>)
+    return (<div>this is to do with {id}</div>)
 }
 
 export default todoDetails
