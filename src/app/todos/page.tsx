@@ -3,7 +3,7 @@ import TodoTable from "./TodoTable";
 
 type Props = {
     searchParams:{
-        sortBy?:string
+        sortBy: 'title'| 'id'| 'completed' | undefined;
     }
 }
 
@@ -12,7 +12,8 @@ const Todos =async ({searchParams}:Props)=>{
     
     
     return (
-    <TodoTable></TodoTable>
+    <TodoTable
+        sortBy={sortBy}/>
         )
 }
 
