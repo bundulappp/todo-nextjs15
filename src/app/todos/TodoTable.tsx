@@ -10,7 +10,6 @@ type Todo = {
 const TodoTable = async ()=>{
     const res = await  fetch('https://jsonplaceholder.typicode.com/todos')
     const todos:Todo[] = await res.json();
-    
     return (
         <>
 <table className="table table-zebra"> 
